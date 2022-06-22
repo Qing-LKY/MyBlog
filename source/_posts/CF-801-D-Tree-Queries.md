@@ -5,6 +5,7 @@ tags:
 - 换根dp
 - 构造
 categories: ACM题解
+mathjax: true
 ---
 
 原题链接：[https://codeforces.com/contest/1695/problem/D2](https://codeforces.com/contest/1695/problem/D2)
