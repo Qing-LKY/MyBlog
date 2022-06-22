@@ -14,3 +14,9 @@ type: "about"
 | **GitHub** | [Qing-LKY](https://github.com/Qing-LKY) |
 | **Codeforces** | [Qing_LKYi](https://codeforces.com/profile/Qing_LKYi) |
 | **Acraea** | capoo555 |
+
+## 友情链接
+
+[Xinyang's Blog](https://blog-xinyangli.vercel.app/)
+
+[Ctrl-newbee](https://www.cnblogs.com/ctrl-newbee/)
