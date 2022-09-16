@@ -21,6 +21,6 @@ type: "about"
 
 ## 友情链接
 
-[Xinyang's Blog](https://blog-xinyangli.vercel.app/)
+[Xinyang's Blog](https://blog.xinyang.life/)
 
 [Ctrl-newbee](https://www.cnblogs.com/ctrl-newbee/)

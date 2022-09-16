@@ -204,7 +204,7 @@ links_settings:
 links:
   #Title: http://yoursite.com
   Past blog: https://www.cnblogs.com/Qing-LKY/
-  Xinyang's Blog: https://blog-xinyangli.vercel.app/
+  Xinyang's Blog: https://blog.xinyang.life/
   Ctrlnewbee: https://www.cnblogs.com/ctrl-newbee/
 
 # Table of Contents in the Sidebar
@@ -212,7 +212,7 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
