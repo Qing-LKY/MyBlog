@@ -41,6 +41,9 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true # 使用本地静态资源
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:
