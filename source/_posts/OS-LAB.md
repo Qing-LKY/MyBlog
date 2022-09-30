@@ -5,7 +5,15 @@ tags: OS
 categories: 课程笔记
 ---
 
-# 前言
+文章目录:
+
+1. **环境配置与 "hello OS！"**
+
+2. [从实模式到保护模式](https://qing-lky.github.io/2022/09/13/OS-LAB-2/)
+
+# 1 环境配置与 "hello OS！"
+
+## 前言
 
 上的是武大网安院严老师的课头。使用的教材是 Orange's 啥啥的那本书。因为第一次课配环境血压飙的有点快，所以开个帖来记录实验过程。
 
@@ -24,14 +32,6 @@ categories: 课程笔记
 因为比较笨，所以我写 acm 题解时大多数时候会默认读者和我一样笨，然后把整个思考过程的过程都很啰嗦地写出来。~~我暑假语雀更了上万字，不过群友似乎不怎么看得下去~~。其实说白了，就是我不太擅长整理和精炼语言。
 
 这个不太好的习惯被我延续到了 OS 实验的博客里。因此这对于只打算看个结果自己想和参考下操作的朋友不是特别的友好。我会在更新的过程中慢慢改进的。
-
-# 文章目录
-
-**1 环境配置与 "hello OS！"**
-
-[2 从实模式到保护模式](https://qing-lky.github.io/2022/09/13/OS-LAB-2/)
-
-# 1 环境配置与 "hello OS！"
 
 ## 1.1 虚拟机平台与操作系统选择
 
@@ -263,10 +263,6 @@ P.S. 什么是截断？举例而言：echo "hello" > a.txt，如果 a.txt 本来
 PPT 上还提到了 display_library。可以参考[文档的 4.3.3](https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html)。似乎与模拟器的显示有关。根据文档，不加的话默认选的应该也是 sdl（我们 configure 的参数也是 sdl），不过我还是加上了。
 
 ```sh
-###############################################################
-# Configuration file for Bochs
-###############################################################
-
 # how much memory the emulated machine will have
 megs: 32
 
@@ -461,4 +457,6 @@ objdump -b binary -D -m i8086 -M intel boot.bin
 
 也可以参考书上这个图。
 
-![](/images/bochs常用调试.png)
+![debug](/images/bochs常用调试.png)
+
+查看 gdt ldt 可以直接 `info gdt`。
