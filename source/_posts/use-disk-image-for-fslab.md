@@ -152,3 +152,9 @@ sudo fdisk -l
 ```
 
 ## 懒人总结
+
+我把上面的步骤搞在了一个 bash 脚本里：
+
+[https://github.com/Qing-LKY/Image-Builder-for-Filesystem-Study](https://github.com/Qing-LKY/Image-Builder-for-Filesystem-Study)
+
+也许能帮上忙。
