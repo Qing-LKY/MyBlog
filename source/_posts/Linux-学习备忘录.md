@@ -16,6 +16,9 @@ categories: 课程笔记
 | .tar | `tar cvf x.tar myDir/` | `tar xvf x.tar` | 此命令只打包不压缩。打包时也可以直接指定文件而不是目录。解包效果类似“解压到当前文件夹” |
 | .tar.gz | `tar zcvf x.tar.gz myDir/` | `tar zxvf x.tar.gz` | c 是 create，x 是 extract |
 | .gz | `gzip myfile` | `gzip -d x.gz` | 单个文件的压缩 |
+| .xz | NULL | `xz -d a.xz` | NULL |
+| .tar.xz | NULL | `tar Jxvf a.tar.gz` | NULL |
+| .zip | NULL | `unzip a.zip` | 等价于 `unzip -d ./ a.zip` |
 
 ## Git
 
