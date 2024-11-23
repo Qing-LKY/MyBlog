@@ -16,9 +16,9 @@ categories: 课程笔记
 | .tar | `tar cvf x.tar myDir/` | `tar xvf x.tar` | 此命令只打包不压缩。打包时也可以直接指定文件而不是目录。解包效果类似“解压到当前文件夹” |
 | .tar.gz | `tar zcvf x.tar.gz myDir/` | `tar zxvf x.tar.gz` | c 是 create，x 是 extract |
 | .gz | `gzip myfile` | `gzip -d x.gz` | 单个文件的压缩 |
-| .xz | NULL | `xz -d a.xz` | NULL |
-| .tar.xz | NULL | `tar Jxvf a.tar.gz` | NULL |
-| .zip | NULL | `unzip a.zip` | 等价于 `unzip -d ./ a.zip` |
+| .xz | `xz -z a` | `xz -d a.xz` | `-k` 可以保留原本的文件，否则默认删除 |
+| .tar.xz | `tar -cJf arch.tar.xz directory` | `tar Jxvf a.tar.gz` | `--remove-files` 可删除原本的 |
+| .zip | `zip -r a.zip a/` | `unzip a.zip` | 该解压等价于 `unzip -d ./ a.zip` |
 
 ## Git
 
@@ -41,3 +41,43 @@ fetch 之后需要手动合并：`git merge master origin/master`。
 使用 whereis: `whereis bash`。
 
 使用 find: `find ~/ -name "x.txt"`。
+
+## 文件系统
+
+查看大小: `df -hT`。
+
+查看文件/文件夹大小: `du -sh file`。
+
+## glibc
+
+`ldd --version` 可以查看系统对应的 libc 版本
+
+## gdb or gef
+
+安装 gef 需要 python3: `sh -c "$(curl -fsSL http://gef.blah.cat/sh)"` (需要代理)
+
+也可以用镜像这样装:
+
+```bash
+curl -O https://gitee.com/datree1353/gef/raw/dev/gef.py
+mv gef.py ~/.gdbinit-gef.py
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+```
+
+# python
+
+如果 python 版本较低，升级 pip 时应该这样:
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+# sudo 用户管理
+
+```bash
+sudo visudo
+```
+
+```text
+username    ALL=(ALL:ALL) ALL
+```
